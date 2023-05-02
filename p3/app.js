@@ -4,17 +4,17 @@ class Tooltip extends HTMLElement {
       this._tooltipBox;
       this._tooltipText = 'Default tooltip text'
       this.attachShadow({ mode: 'open' }) 
+      const template = document.querySelector('#tn-template')
+      this.shadowRoot.appendChild(template.content.cloneNode(true))
    }
    connectedCallback() {
       if (this.hasAttribute('text')) {
          this._tooltipText = this.getAttribute('text')
       }
-      const icon = document.createElement('span')
-      icon.textContent = ' (?)'
+      const icon = this.shadowRoot.querySelector('span')
       icon.addEventListener('mouseenter', this._showToolTip.bind(this))
       icon.addEventListener('mouseleave', this._hideToolTip.bind(this))
       this.shadowRoot.appendChild(icon)
-      console.log('It is working!')
    }
 
    _showToolTip() {
