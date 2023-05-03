@@ -13,6 +13,10 @@ The goal is to learn and build the standardized UI Components library to support
   
 ## Technology Used
 
-- HTML5, CSS3, JavaScript 
+- HTML5, CSS3, JavaScript, TypeScript
 - UI Web Component Standard JavaScript Library
+
+## Resources and Reference Documentation
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web)
 
