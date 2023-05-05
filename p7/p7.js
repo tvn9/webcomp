@@ -16,8 +16,8 @@ class Tooltip extends HTMLElement {
             }
 
          </style>
-         <slot>Some Default</slot>
          <span> (?)</span>
+         <slot>Some Default</slot>
       `;
    }
 
