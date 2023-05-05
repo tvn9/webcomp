@@ -26,7 +26,7 @@ class PopupInfo extends HTMLElement {
       if (this.hasAttribute("img")) {
          imgURL = this.getAttribute("img");
       } else {
-         imgURL = "./img/helpv1.svg";
+         imgURL = "./img/helpIcon.svg";
       }
 
       const img = document.createElement("img");
