@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Popup Info Example</title>
+   <link rel="stylesheet" href="./style.css">
+   <script defer src="./p12.js"></script>
+</head>
+
+<body>
+   <h1>Welcome to Web Component</h1>
+   <h2>Popup Info Example using External Stylesheet Link - from MDN Web docs</h2>
+
+   <form>
+      <div>
+         <label for="cvc">Enter your CVC <popup-info img="./img/helpIcon.svg"
+               data-text="Your card validate code (CVC) is an extra security feature - it is the last 3 or 4 numbers on the back of your card.">
+            </popup-info>
+         </label>
+         <input type="text" id="cvc">
+      </div>
+   </form>
+
+</body>
+
+</html>
