@@ -33,9 +33,11 @@ class PopupInfo extends HTMLElement {
       img.src = imgURL;
       icon.appendChild(img);
 
+      /*
       // Create some CSS to apply to the shadow DOM
       const style = document.createElement("style");
       console.log(style.isConnected);
+      */
 
       // Using external stylesheet link
       const linkElem = document.createElement('link');

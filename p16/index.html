@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Web Component</title>
+</head>
+
+<body>
+   <h1>Welcome to Web Component</h1>
+   <h3>Using template with web components example - MDN</h3>
+
+   <template id="tn-p">
+      <style>
+         p {
+            font-family: Roboto;
+            background-color: #666666;
+            color: #ffffff;
+            padding: 5px;
+         }
+      </style>
+      <strong>Inside template: What you see is what you get!</strong>
+      <p>
+         <slot name="tn-abc">Inside template: Slot Default Text</slot>
+      </p>
+   </template>
+
+   <tn-p>
+      <p slot="tn-abc">Example 1:</p>
+      <p slot="tn-abc">Example 2 - Some text outside template and with slot</p>
+   </tn-p>
+
+   <h3>Example 3:</h3>
+   <tn-p>Example 3:</tn-p>
+
+   <h3>Example 4:</h3>
+   <tn-p>
+      <p slot="tn-abc">
+         Example 4 <strong>This is not default text</strong>
+      </p>
+   </tn-p>
+   <h3>End of Example 4</h3>
+
+   <tn-p>
+      <ul slot="tn-abc">
+         <li>Let's have some different text!</li>
+         <li>Int a list!</li>
+      </ul>
+   </tn-p>
+   <script src="./p16.js"></script>
+</body>
+
+</html>
