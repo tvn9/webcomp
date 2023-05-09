@@ -12,6 +12,7 @@ The goal is to learn and build the standardized UI Components library to support
 
 - HTML5, CSS3, JavaScript
 - UI Web Component Standard JavaScript Library
+- Stencil
 
 ### Resources and Reference Documentation
 
