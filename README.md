@@ -1,6 +1,6 @@
 # Web Component
 Building UI Web Frontend Component with JavaScript Web Component standard.
-The goal is to learn and build the standardized UI Components library to support interoperability across browsers with UI components that less reliant on other UI Frameworks.
+The goal is to learn and build the standardized UI Components library to support interoperability across browsers with UI components that are less reliant on other UI Frameworks.
 
 ### Tools Used in This Project
 

@@ -1,3 +1,0 @@
-class Tooltip extends HTMLElement {
-
-}
