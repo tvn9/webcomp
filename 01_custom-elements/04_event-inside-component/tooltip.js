@@ -1,4 +1,5 @@
 class Tooltip extends HTMLElement {
+   // constructor creates the element and basic initialization
    constructor() {
       super();
       this._tooltipPopup;
@@ -8,6 +9,7 @@ class Tooltip extends HTMLElement {
       this.shadowRoot.appendChild(template.content.cloneNode(true));
    }
 
+   // DOM initialization
    connectedCallback() {
       if (this.hasAttribute('text')) {
          this._tooltipText = this.getAttribute('text');
@@ -19,6 +21,7 @@ class Tooltip extends HTMLElement {
       this.style.position = 'relative';
    }
 
+   // _showTooltip is a local method by using conventional leading underscore following with method name
    _showTooltip() {
       this._tooltipPopup = document.createElement('div');
       this._tooltipPopup.textContent = this._tooltipText;

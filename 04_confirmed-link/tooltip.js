@@ -9,8 +9,8 @@ class Tooltip extends HTMLElement {
             div {
                background-color: #1E1E1E;
                color: #ffffff;
-               width: 20em;
-               border: 2px solid yellow;
+               max-width: fit-content;
+               border: 2px solid red;
             }
          </style>
          <slot> Default text value can be used in slot</slot><span> (?) </span>

@@ -7,6 +7,14 @@
    <title>Web Components</title>
    <script src="tooltip.js"></script>
    <script src="confirmedLink.js"></script>
+   <style>
+      .span-title {
+         max-width: fit-content;
+         background-color: yellow;
+         color: blue;
+         font-size: 30px;
+      }
+   </style>
 </head>
 
 <body>
@@ -20,11 +28,9 @@
       <tn-tooltip text="Person's name">Thanh Vu Nguyen</tn-tooltip>
    </div>
 
-   <div>
-      <tn-tooltip text="Web Components is a set of standard">
-         Tooltip using Web Components
-      </tn-tooltip>
-   </div>
+   <tn-tooltip text="Web Components is a set of standard">
+      <span class="span-title">Tooltip using Web Components</span>
+   </tn-tooltip>
 
    <div>
       <!-- tooltip without value -->
