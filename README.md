@@ -17,4 +17,5 @@ The goal is to learn and build the standardized UI Components library to support
 ### Resources and Reference Documentation
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web)
+- [WebComponents.org](https://www.webcomponents.org/)
 
