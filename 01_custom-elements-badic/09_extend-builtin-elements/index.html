@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Web Components</title>
+   <script src="./tooltip.js"></script>
+   <script src="./confirmedLink.js"></script>
+   <style>
+      div {
+         border: 2px solid blue;
+         /* width: fit-content; */
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- Extend html built-in element -->
+   <h1>Confirm Link Example</h1>
+   <a is="tn-confirm-link" href="https://google.com" target="_blank">google.com</a>
+
+   <p>
+      <tn-tooltip text="Person's name">Thanh Nguyen</tn-tooltip> is a programmer!
+   </p>
+
+   <tn-tooltip text="Web Components is a set of standard">Tooltip using Web Components</tn-tooltip>
+</body>
+
+</html>
